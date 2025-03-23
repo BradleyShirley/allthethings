@@ -1,0 +1,118 @@
+[
+  {
+    "question": "Which AWS service is used for object storage?",
+    "options": ["Amazon EC2", "Amazon RDS", "Amazon S3", "AWS Lambda"],
+    "answer": "Amazon S3"
+  },
+  {
+    "question": "Which AWS service provides a fully managed relational database?",
+    "options": ["Amazon DynamoDB", "Amazon RDS", "Amazon Redshift", "Amazon ElastiCache"],
+    "answer": "Amazon RDS"
+  },
+  {
+    "question": "What does the AWS 'shared responsibility model' entail?",
+    "options": ["AWS manages all security aspects", "The customer manages all security aspects", "Security responsibilities are shared between AWS and the customer", "Security is not a concern in the cloud"],
+    "answer": "Security responsibilities are shared between AWS and the customer"
+  },
+  {
+    "question": "Which AWS service enables you to run code without provisioning or managing servers?",
+    "options": ["AWS Lambda", "Amazon EC2", "AWS Elastic Beanstalk", "Amazon Lightsail"],
+    "answer": "AWS Lambda"
+  },
+  {
+    "question": "Which AWS service is a global content delivery network (CDN)?",
+    "options": ["Amazon CloudFront", "Amazon Route 53", "AWS Direct Connect", "Amazon VPC"],
+    "answer": "Amazon CloudFront"
+  },
+  {
+    "question": "Which AWS service allows for the decoupling of application components using messaging?",
+    "options": ["Amazon SNS", "Amazon SQS", "AWS Step Functions", "Amazon MQ"],
+    "answer": "Amazon SQS"
+  },
+  {
+    "question": "Which AWS service provides a virtual network dedicated to your AWS account?",
+    "options": ["Amazon VPC", "AWS Direct Connect", "AWS VPN", "Amazon CloudFront"],
+    "answer": "Amazon VPC"
+  },
+  {
+    "question": "Which AWS service can be used to monitor and audit API calls made in your account?",
+    "options": ["AWS CloudTrail", "Amazon CloudWatch", "AWS Config", "AWS Trusted Advisor"],
+    "answer": "AWS CloudTrail"
+  },
+  {
+    "question": "Which AWS service provides data warehousing capabilities?",
+    "options": ["Amazon RDS", "Amazon DynamoDB", "Amazon Redshift", "Amazon Aurora"],
+    "answer": "Amazon Redshift"
+  },
+  {
+    "question": "Which AWS service helps you manage user access and encryption keys?",
+    "options": ["AWS IAM", "AWS KMS", "AWS Shield", "AWS WAF"],
+    "answer": "AWS KMS"
+  },
+  {
+    "question": "Which AWS service is used for scalable DNS and domain name management?",
+    "options": ["Amazon Route 53", "AWS Global Accelerator", "Amazon CloudFront", "AWS Direct Connect"],
+    "answer": "Amazon Route 53"
+  },
+  {
+    "question": "Which AWS service offers a fully managed NoSQL database?",
+    "options": ["Amazon RDS", "Amazon DynamoDB", "Amazon Aurora", "Amazon Redshift"],
+    "answer": "Amazon DynamoDB"
+  },
+  {
+    "question": "Which AWS service enables real-time processing of streaming data?",
+    "options": ["Amazon Kinesis", "AWS Glue", "Amazon EMR", "AWS Batch"],
+    "answer": "Amazon Kinesis"
+  },
+  {
+    "question": "Which AWS service allows you to automate the deployment of resources using templates?",
+    "options": ["AWS CloudFormation", "AWS OpsWorks", "AWS Elastic Beanstalk", "AWS CodeDeploy"],
+    "answer": "AWS CloudFormation"
+  },
+  {
+    "question": "Which AWS service provides a secure file transfer service over SFTP, FTPS, and FTP?",
+    "options": ["AWS Transfer Family", "Amazon FSx", "Amazon EFS", "AWS Storage Gateway"],
+    "answer": "AWS Transfer Family"
+  },
+  {
+    "question": "Which AWS service helps you detect and protect against DDoS attacks?",
+    "options": ["AWS Shield", "AWS WAF", "AWS Firewall Manager", "AWS GuardDuty"],
+    "answer": "AWS Shield"
+  },
+  {
+    "question": "Which AWS service provides a fully managed message broker service for Apache ActiveMQ?",
+    "options": ["Amazon MQ", "Amazon SNS", "Amazon SQS", "AWS Step Functions"],
+    "answer": "Amazon MQ"
+  },
+  {
+    "question": "Which AWS service allows you to run containerized applications without managing servers?",
+    "options": ["AWS Fargate", "Amazon ECS", "Amazon EKS", "AWS Lambda"],
+    "answer": "AWS Fargate"
+  },
+  {
+    "question": "Which AWS service provides a managed Hadoop framework for processing large data sets?",
+    "options": ["Amazon EMR", "AWS Glue", "AWS Data Pipeline", "Amazon Redshift"],
+    "answer": "Amazon EMR"
+  },
+  {
+    "question": "Which AWS service enables you to centrally manage billing, control access, and compliance across multiple AWS accounts?",
+    "options": ["AWS Organizations", "AWS Control Tower", "AWS IAM", "AWS Config"],
+    "answer": "AWS Organizations"
+  },
+  {
+    "question": "Which AWS service provides a petabyte-scale data transport solution using secure appliances?",
+    "options": ["AWS Snowball", "AWS Direct Connect", "AWS DataSync", "AWS Storage Gateway"],
+    "answer": "AWS Snowball"
+  },
+  {
+    "question": "Which AWS service allows you to set up a dedicated network connection from your premises to AWS?",
+    "options": ["AWS Direct Connect", "AWS VPN", "Amazon VPC", "AWS Transit Gateway"],
+    "answer": "AWS Direct Connect"
+  },
+  {
+    "question": "Which AWS service provides a scalable file storage for use with Amazon EC2?",
+    "options": ["Amazon EBS", "Amazon S3", "Amazon EFS", "AWS Snowball"],
+    "answer": "Amazon EBS"
+  }
+]
+

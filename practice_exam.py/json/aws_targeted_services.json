@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is Amazon SageMaker used for?",
+    "options": [
+      "A) Building and deploying machine learning models",
+      "B) Storing objects in the cloud",
+      "C) Managing database backups",
+      "D) Hosting static websites"
+    ],
+    "answer": "A) Building and deploying machine learning models"
+  },
+  {
+    "question": "What is Amazon RDS?",
+    "options": [
+      "A) A service for storing files in the cloud",
+      "B) A relational database service",
+      "C) A serverless compute platform",
+      "D) A CDN for web content"
+    ],
+    "answer": "B) A relational database service"
+  },
+  {
+    "question": "What does AWS CloudFormation do?",
+    "options": [
+      "A) Automatically backs up EC2 instances",
+      "B) Helps define and provision AWS infrastructure using code",
+      "C) Streams real-time data to analytics tools",
+      "D) Manages DNS records"
+    ],
+    "answer": "B) Helps define and provision AWS infrastructure using code"
+  },
+  {
+    "question": "What is AWS Artifact?",
+    "options": [
+      "A) A portal for accessing compliance and security reports",
+      "B) A tool for building CI/CD pipelines",
+      "C) A NoSQL database service",
+      "D) A virtual machine image store"
+    ],
+    "answer": "A) A portal for accessing compliance and security reports"
+  },
+  {
+    "question": "What type of database is Amazon DynamoDB?",
+    "options": [
+      "A) A relational database",
+      "B) A graph database",
+      "C) A key-value and document NoSQL database",
+      "D) A time-series database"
+    ],
+    "answer": "C) A key-value and document NoSQL database"
+  },
+  {
+    "question": "What is Amazon Comprehend used for?",
+    "options": [
+      "A) Running containers at scale",
+      "B) Analyzing text using natural language processing (NLP)",
+      "C) Managing infrastructure as code",
+      "D) Monitoring performance metrics"
+    ],
+    "answer": "B) Analyzing text using natural language processing (NLP)"
+  },
+  {
+    "question": "What are AWS Step Functions used for?",
+    "options": [
+      "A) To orchestrate workflows using state machines",
+      "B) To manage IAM roles",
+      "C) To deploy static websites",
+      "D) To build container images"
+    ],
+    "answer": "A) To orchestrate workflows using state machines"
+  },
+  {
+    "question": "What is AWS Fargate?",
+    "options": [
+      "A) A serverless container compute engine",
+      "B) A managed firewall service",
+      "C) A DNS resolver",
+      "D) A message queuing system"
+    ],
+    "answer": "A) A serverless container compute engine"
+  },
+  {
+    "question": "What is Amazon EBS used for?",
+    "options": [
+      "A) Object storage for data archiving",
+      "B) Scalable file storage for EC2",
+      "C) Block storage volumes for EC2 instances",
+      "D) Hosting serverless applications"
+    ],
+    "answer": "C) Block storage volumes for EC2 instances"
+  },
+  {
+    "question": "What is Amazon SQS?",
+    "options": [
+      "A) A service for secure VPN connectivity",
+      "B) A queue service for decoupling applications",
+      "C) A tool for tracking billing usage",
+      "D) A data visualization dashboard"
+    ],
+    "answer": "B) A queue service for decoupling applications"
+  },
+  {
+    "question": "What is Amazon Aurora?",
+    "options": [
+      "A) A virtual server hosting service",
+      "B) A MySQL- and PostgreSQL-compatible relational database engine",
+      "C) A text-to-speech conversion service",
+      "D) A NoSQL database engine"
+    ],
+    "answer": "B) A MySQL- and PostgreSQL-compatible relational database engine"
+  },
+  {
+    "question": "What is Amazon Kinesis used for?",
+    "options": [
+      "A) DNS management and traffic routing",
+      "B) Data warehousing and analytics",
+      "C) Real-time data streaming and analytics",
+      "D) Cloud-based file sharing"
+    ],
+    "answer": "C) Real-time data streaming and analytics"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which AWS service is best for hosting a static website?",
+    "options": [
+      "A) Amazon EC2",
+      "B) AWS Lambda",
+      "C) Amazon S3",
+      "D) Amazon RDS"
+    ],
+    "answer": "C) Amazon S3"
+  },
+  {
+    "question": "What does the AWS Shared Responsibility Model state?",
+    "options": [
+      "A) AWS is responsible for all aspects of security",
+      "B) The customer is responsible for all configurations",
+      "C) AWS and the customer share responsibility for security and compliance",
+      "D) AWS only provides networking services"
+    ],
+    "answer": "C) AWS and the customer share responsibility for security and compliance"
+  },
+  {
+    "question": "Which AWS service lets you run code without provisioning servers?",
+    "options": [
+      "A) AWS Batch",
+      "B) Amazon EC2",
+      "C) Amazon S3",
+      "D) AWS Lambda"
+    ],
+    "answer": "D) AWS Lambda"
+  },
+  {
+    "question": "Which tool helps you estimate your monthly AWS bill?",
+    "options": [
+      "A) AWS Budgets",
+      "B) AWS Pricing Calculator",
+      "C) AWS CloudTrail",
+      "D) AWS Trusted Advisor"
+    ],
+    "answer": "B) AWS Pricing Calculator"
+  },
+  {
+    "question": "What are Availability Zones?",
+    "options": [
+      "A) Physical locations with AWS support teams",
+      "B) Global traffic routing policies",
+      "C) Isolated locations within a region with power and networking",
+      "D) Backup regions for data storage"
+    ],
+    "answer": "C) Isolated locations within a region with power and networking"
+  },
+  {
+    "question": "Which AWS support plan includes access to a Technical Account Manager (TAM)?",
+    "options": [
+      "A) Basic",
+      "B) Developer",
+      "C) Business",
+      "D) Enterprise"
+    ],
+    "answer": "D) Enterprise"
+  },
+  {
+    "question": "Which service provides DNS management?",
+    "options": [
+      "A) AWS Direct Connect",
+      "B) Amazon CloudFront",
+      "C) AWS IAM",
+      "D) Amazon Route 53"
+    ],
+    "answer": "D) Amazon Route 53"
+  },
+  {
+    "question": "Which AWS service provides object storage?",
+    "options": [
+      "A) Amazon EBS",
+      "B) Amazon EFS",
+      "C) Amazon S3",
+      "D) Amazon RDS"
+    ],
+    "answer": "C) Amazon S3"
+  },
+  {
+    "question": "What is the purpose of AWS IAM?",
+    "options": [
+      "A) To monitor billing metrics",
+      "B) To restrict physical access to data centers",
+      "C) To manage users, groups, and permissions",
+      "D) To encrypt data at rest"
+    ],
+    "answer": "C) To manage users, groups, and permissions"
+  },
+  {
+    "question": "What does elasticity mean in cloud computing?",
+    "options": [
+      "A) High availability of resources",
+      "B) Ability to increase or decrease resources as needed",
+      "C) Fixed pricing with flexible storage",
+      "D) Ability to choose any AWS region"
+    ],
+    "answer": "B) Ability to increase or decrease resources as needed"
+  }
+]

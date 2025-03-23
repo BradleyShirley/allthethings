@@ -1,0 +1,382 @@
+[
+  {
+    "question": "What is Amazon EC2?",
+    "options": [
+      "A) A scalable computing service",
+      "B) A managed database service",
+      "C) A content delivery network",
+      "D) A serverless computing service"
+    ],
+    "answer": "A) A scalable computing service"
+  },
+  {
+    "question": "What is Amazon S3?",
+    "options": [
+      "A) A relational database service",
+      "B) A simple storage service",
+      "C) A messaging service",
+      "D) A monitoring service"
+    ],
+    "answer": "B) A simple storage service"
+  },
+  {
+    "question": "What is AWS Lambda?",
+    "options": [
+      "A) A platform for running containerized applications",
+      "B) A service for running code without provisioning servers",
+      "C) A data warehousing service",
+      "D) A service for managing DNS records"
+    ],
+    "answer": "B) A service for running code without provisioning servers"
+  },
+  {
+    "question": "What is Amazon RDS?",
+    "options": [
+      "A) A distributed computing service",
+      "B) A managed relational database service",
+      "C) A caching service",
+      "D) A machine learning service"
+    ],
+    "answer": "B) A managed relational database service"
+  },
+  {
+    "question": "What is Amazon VPC?",
+    "options": [
+      "A) A virtual private cloud service",
+      "B) A video processing service",
+      "C) A version control service",
+      "D) A virtual payment system"
+    ],
+    "answer": "A) A virtual private cloud service"
+  },
+  {
+    "question": "What is AWS IAM?",
+    "options": [
+      "A) A service for managing user identities and permissions",
+      "B) A service for monitoring application performance",
+      "C) A service for deploying applications",
+      "D) A service for managing IoT devices"
+    ],
+    "answer": "A) A service for managing user identities and permissions"
+  },
+  {
+    "question": "What is Amazon CloudFront?",
+    "options": [
+      "A) A cloud-based integrated development environment",
+      "B) A content delivery network service",
+      "C) A service for managing cloud resources",
+      "D) A service for real-time data processing"
+    ],
+    "answer": "B) A content delivery network service"
+  },
+  {
+    "question": "What is Amazon DynamoDB?",
+    "options": [
+      "A) A NoSQL database service",
+      "B) A data migration service",
+      "C) A data analytics service",
+      "D) A blockchain service"
+    ],
+    "answer": "A) A NoSQL database service"
+  },
+  {
+    "question": "What is AWS CloudFormation?",
+    "options": [
+      "A) A service for automating resource provisioning using templates",
+      "B) A service for monitoring cloud resources",
+      "C) A service for managing billing and costs",
+      "D) A service for deploying machine learning models"
+    ],
+    "answer": "A) A service for automating resource provisioning using templates"
+  },
+  {
+    "question": "What is Amazon Route 53?",
+    "options": [
+      "A) A DNS web service",
+      "B) A data warehousing service",
+      "C) A serverless computing service",
+      "D) A container orchestration service"
+    ],
+    "answer": "A) A DNS web service"
+  },
+  {
+    "question": "What is Amazon EBS?",
+    "options": [
+      "A) A block storage service for use with EC2",
+      "B) A service for sending email notifications",
+      "C) A service for streaming data",
+      "D) A service for managing APIs"
+    ],
+    "answer": "A) A block storage service for use with EC2"
+  },
+  {
+    "question": "What is Amazon SNS?",
+    "options": [
+      "A) A notification service",
+      "B) A service for managing serverless applications",
+      "C) A service for managing security policies",
+      "D) A service for managing network traffic"
+    ],
+    "answer": "A) A notification service"
+  },
+  {
+    "question": "What is Amazon SQS?",
+    "options": [
+      "A) A message queuing service",
+      "B) A service for querying databases",
+      "C) A service for managing software versions",
+      "D) A service for managing cloud storage"
+    ],
+    "answer": "A) A message queuing service"
+  },
+  {
+    "question": "What is AWS CloudTrail?",
+    "options": [
+      "A) A service for logging and monitoring API calls",
+      "B) A service for deploying applications",
+      "C) A service for managing cloud costs",
+      "D) A service for automating backups"
+    ],
+    "answer": "A) A service for logging and monitoring API calls"
+  },
+  {
+    "question": "What is AWS Elastic Beanstalk?",
+    "options": [
+      "A) A platform as a service (PaaS) for deploying applications",
+      "B) A service for managing elastic IP addresses",
+      "C) A service for monitoring application health",
+      "D) A service for managing containerized applications"
+    ],
+    "answer": "A) A platform as a service (PaaS) for deploying applications"
+  },
+  {
+    "question": "What is Amazon Kinesis?",
+    "options": [
+      "A) A service for real-time data streaming",
+      "B) A service for managing Kubernetes clusters",
+      "C) A service for data warehousing",
+      "D) A service for managing blockchain networks"
+    ],
+    "answer": "A) A service for real-time data streaming"
+  },
+  {
+    "question": "What is AWS Glue?",
+    "options": [
+      "A) A managed ETL (extract, transform, load) service",
+      "B) A service for managing code repositories",
+      "C) A service for deploying machine learning models",
+      "D) A service for monitoring network performance"
+    ],
+    "answer": "A) A managed ETL (extract, transform, load) service"
+  },
+  {
+    "question": "What is Amazon Redshift?",
+    "options": [
+      "A) A data warehousing service",
+      "B) A service for managing container registries",
+      "C) A service for automating code deployments",
+      "D) A service for managing IoT devices"
+    ],
+    "answer": "A) A data warehousing service"
+  },
+  {
+    "question": "What is AWS CodePipeline?",
+    "options": [
+      "A) A continuous integration and delivery service",
+      "B) A service for managing code versions",
+      "C) A service for monitoring application performance",
+      "D) A service for managing cloud resources"
+  ],
+  "answer": "A) A continuous integration and delivery service"
+},
+{
+  "question": "What is AWS CodeCommit?",
+  "options": [
+    "A) A source control service for private Git repositories",
+    "B) A container orchestration service",
+    "C) A continuous deployment pipeline",
+    "D) A serverless backend platform"
+  ],
+  "answer": "A) A source control service for private Git repositories"
+},
+{
+  "question": "What is AWS Fargate?",
+  "options": [
+    "A) A serverless compute engine for containers",
+    "B) A high-performance file storage service",
+    "C) A monitoring and alerting tool",
+    "D) A service for email delivery"
+  ],
+  "answer": "A) A serverless compute engine for containers"
+},
+{
+  "question": "What is Amazon Aurora?",
+  "options": [
+    "A) A MySQL- and PostgreSQL-compatible relational database",
+    "B) A high-throughput data streaming service",
+    "C) A managed Hadoop framework",
+    "D) A DNS resolution service"
+  ],
+  "answer": "A) A MySQL- and PostgreSQL-compatible relational database"
+},
+{
+  "question": "What is AWS Shield?",
+  "options": [
+    "A) A DDoS protection service",
+    "B) A firewall configuration tool",
+    "C) A data loss prevention platform",
+    "D) A web application scanner"
+  ],
+  "answer": "A) A DDoS protection service"
+},
+{
+  "question": "What is AWS WAF?",
+  "options": [
+    "A) A web application firewall",
+    "B) A managed antivirus scanner",
+    "C) A container firewall service",
+    "D) A traffic shaping tool"
+  ],
+  "answer": "A) A web application firewall"
+},
+{
+  "question": "What is Amazon SageMaker?",
+  "options": [
+    "A) A service for building, training, and deploying machine learning models",
+    "B) A service for managing mobile apps",
+    "C) A service for sending SMS notifications",
+    "D) A version control service"
+  ],
+  "answer": "A) A service for building, training, and deploying machine learning models"
+},
+{
+  "question": "What is Amazon QuickSight?",
+  "options": [
+    "A) A business intelligence and data visualization service",
+    "B) A logging and analytics tool",
+    "C) A NoSQL query engine",
+    "D) A video rendering service"
+  ],
+  "answer": "A) A business intelligence and data visualization service"
+},
+{
+  "question": "What is AWS Step Functions?",
+  "options": [
+    "A) A serverless orchestration service for workflows",
+    "B) A load balancing tool",
+    "C) A NoSQL schema generator",
+    "D) A DNS management utility"
+  ],
+  "answer": "A) A serverless orchestration service for workflows"
+},
+{
+  "question": "What is AWS Elastic Load Balancing (ELB)?",
+  "options": [
+    "A) A service that automatically distributes incoming application traffic",
+    "B) A container scheduler",
+    "C) A database backup service",
+    "D) A file distribution system"
+  ],
+  "answer": "A) A service that automatically distributes incoming application traffic"
+},
+{
+  "question": "What is AWS Trusted Advisor?",
+  "options": [
+    "A) A tool for optimizing performance, security, and cost",
+    "B) A machine learning model recommendation engine",
+    "C) A virtual assistant for cloud services",
+    "D) A billing alert system"
+  ],
+  "answer": "A) A tool for optimizing performance, security, and cost"
+},
+{
+  "question": "What is AWS Config?",
+  "options": [
+    "A) A service for auditing and recording resource configurations",
+    "B) A configuration file generator for EC2",
+    "C) A template builder for Lambda",
+    "D) A managed CI/CD pipeline"
+  ],
+  "answer": "A) A service for auditing and recording resource configurations"
+},
+{
+  "question": "What is Amazon Lex?",
+  "options": [
+    "A) A service for building conversational chatbots",
+    "B) A voice transcription engine",
+    "C) A video conferencing platform",
+    "D) A recommendation engine"
+  ],
+  "answer": "A) A service for building conversational chatbots"
+},
+{
+  "question": "What is Amazon Polly?",
+  "options": [
+    "A) A text-to-speech service",
+    "B) A data cleaning tool",
+    "C) A voice recognition engine",
+    "D) A container scanning service"
+  ],
+  "answer": "A) A text-to-speech service"
+},
+{
+  "question": "What is Amazon Comprehend?",
+  "options": [
+    "A) A natural language processing (NLP) service",
+    "B) A real-time log viewer",
+    "C) A big data analytics platform",
+    "D) A container optimizer"
+  ],
+  "answer": "A) A natural language processing (NLP) service"
+},
+{
+  "question": "What is AWS Secrets Manager?",
+  "options": [
+    "A) A tool for managing and rotating credentials",
+    "B) A cryptographic signing service",
+    "C) A code obfuscation platform",
+    "D) A secure shell key distributor"
+  ],
+  "answer": "A) A tool for managing and rotating credentials"
+},
+{
+  "question": "What is AWS Artifact?",
+  "options": [
+    "A) A portal for compliance reports and documentation",
+    "B) A software artifact storage service",
+    "C) A version control tool",
+    "D) A logging dashboard"
+  ],
+  "answer": "A) A portal for compliance reports and documentation"
+},
+{
+  "question": "What is AWS Cost Explorer?",
+  "options": [
+    "A) A tool to view and analyze AWS costs and usage",
+    "B) A service to forecast application scaling costs",
+    "C) A cloud savings estimation tool",
+    "D) A budgeting recommendation engine"
+  ],
+  "answer": "A) A tool to view and analyze AWS costs and usage"
+},
+{
+  "question": "What is AWS Budgets?",
+  "options": [
+    "A) A service to set custom cloud cost and usage budgets",
+    "B) A serverless cost control platform",
+    "C) A subscription limit enforcement tool",
+    "D) A one-time purchase billing tool"
+  ],
+  "answer": "A) A service to set custom cloud cost and usage budgets"
+},
+{
+  "question": "What is Amazon Elastic File System (EFS)?",
+  "options": [
+    "A) A scalable, shared file storage for use with EC2",
+    "B) A managed backup utility",
+    "C) An S3-compatible blob store",
+    "D) An object replication system"
+  ],
+  "answer": "A) A scalable, shared file storage for use with EC2"
+}
+]
