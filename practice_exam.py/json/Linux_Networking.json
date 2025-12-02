@@ -1,0 +1,208 @@
+[
+  {
+    "question": "Which command shows all IP addresses assigned to all interfaces using the modern iproute2 tools?",
+    "options": ["ifconfig -a", "ip addr show", "ipconfig /all", "netstat -i"],
+    "answer": "ip addr show"
+  },
+  {
+    "question": "Which command displays the current routing table using iproute2?",
+    "options": ["route -n", "ip route show", "netstat -rn", "ip neigh"],
+    "answer": "ip route show"
+  },
+  {
+    "question": "Which command is commonly used to check connectivity to a remote host by sending ICMP echo requests?",
+    "options": ["curl", "ping", "traceroute", "nslookup"],
+    "answer": "ping"
+  },
+  {
+    "question": "Which command shows the path that packets take to reach a destination?",
+    "options": ["ping", "dig", "traceroute", "route"],
+    "answer": "traceroute"
+  },
+  {
+    "question": "Which command shows listening TCP and UDP sockets on a modern Linux system?",
+    "options": ["netstat -lntup", "ss -lntup", "ifconfig -a", "ip link"],
+    "answer": "ss -lntup"
+  },
+  {
+    "question": "Which command captures and displays packets on an interface for troubleshooting?",
+    "options": ["tcpdump", "ip monitor", "netstat", "ss"],
+    "answer": "tcpdump"
+  },
+  {
+    "question": "Which file is typically used to configure static hostname-to-IP mappings on a Linux system?",
+    "options": ["/etc/resolv.conf", "/etc/hostname", "/etc/hosts", "/etc/network/interfaces"],
+    "answer": "/etc/hosts"
+  },
+  {
+    "question": "Which file normally contains the system’s DNS resolver configuration (nameservers)?",
+    "options": ["/etc/hosts", "/etc/resolv.conf", "/etc/hostname", "/etc/nsswitch.conf"],
+    "answer": "/etc/resolv.conf"
+  },
+  {
+    "question": "Which command shows basic information about all network interfaces, including MAC addresses, using iproute2?",
+    "options": ["ip addr", "ip link show", "ifconfig -a", "ip route"],
+    "answer": "ip link show"
+  },
+  {
+    "question": "Which command is used to bring an interface named eth0 up using iproute2?",
+    "options": [
+      "ifconfig eth0 up",
+      "ip link set eth0 up",
+      "ip addr add eth0 up",
+      "netstat -i eth0 up"
+    ],
+    "answer": "ip link set eth0 up"
+  },
+  {
+    "question": "Which command would you use to add an IP address 192.168.10.10/24 to interface eth0?",
+    "options": [
+      "ip addr add 192.168.10.10 dev eth0",
+      "ip addr add 192.168.10.10/24 dev eth0",
+      "ifconfig eth0 192.168.10.10 netmask 255.255.255.0",
+      "route add 192.168.10.10/24 dev eth0"
+    ],
+    "answer": "ip addr add 192.168.10.10/24 dev eth0"
+  },
+  {
+    "question": "Which command shows the default gateway using iproute2?",
+    "options": [
+      "ip route show default",
+      "route -n default",
+      "netstat -rn default",
+      "ip neigh show default"
+    ],
+    "answer": "ip route show default"
+  },
+  {
+    "question": "What does MTU stand for in networking?",
+    "options": [
+      "Maximum Transmission Unit",
+      "Multi Traffic Usage",
+      "Minimal Throughput Unit",
+      "Maximum Transfer Usage"
+    ],
+    "answer": "Maximum Transmission Unit"
+  },
+  {
+    "question": "Which command can be used to change the MTU of eth0 to 1400?",
+    "options": [
+      "ip link set eth0 mtu 1400",
+      "ifconfig eth0 mtu=1400",
+      "ip addr set eth0 mtu 1400",
+      "netstat -i eth0 mtu 1400"
+    ],
+    "answer": "ip link set eth0 mtu 1400"
+  },
+  {
+    "question": "Which command is used to test DNS name resolution for a domain (e.g., example.com)?",
+    "options": ["ping -n example.com", "dig example.com", "route example.com", "ip dns example.com"],
+    "answer": "dig example.com"
+  },
+  {
+    "question": "Which command shows the ARP/NDP neighbor table using iproute2?",
+    "options": ["ip neigh show", "arp -a", "ip route neigh", "ss -neigh"],
+    "answer": "ip neigh show"
+  },
+  {
+    "question": "Which command continuously shows changes to addresses, routes, and neighbors?",
+    "options": [
+      "ip monitor all",
+      "ip watch all",
+      "netstat --monitor",
+      "tcpdump -M"
+    ],
+    "answer": "ip monitor all"
+  },
+  {
+    "question": "Which command would you use to list all open TCP ports in listening state only?",
+    "options": [
+      "ss -tln",
+      "ss -uan",
+      "netstat -i",
+      "ip addr show tcp"
+    ],
+    "answer": "ss -tln"
+  },
+  {
+    "question": "Which command shows the system’s current hostname?",
+    "options": ["cat /etc/hostname", "hostnamectl status", "hostname", "Any of the above"],
+    "answer": "Any of the above"
+  },
+  {
+    "question": "Which command is used to permanently change the system hostname on a systemd-based distro?",
+    "options": [
+      "hostname newname",
+      "echo newname > /etc/hostname",
+      "hostnamectl set-hostname newname",
+      "ip hostname set newname"
+    ],
+    "answer": "hostnamectl set-hostname newname"
+  },
+  {
+    "question": "In the CIDR notation 192.168.1.0/24, what does /24 represent?",
+    "options": [
+      "The number of usable hosts",
+      "The number of network bits in the subnet mask",
+      "The number of subnets",
+      "The default gateway index"
+    ],
+    "answer": "The number of network bits in the subnet mask"
+  },
+  {
+    "question": "Which of the following IP addresses is a valid private IPv4 address?",
+    "options": ["8.8.8.8", "10.0.0.5", "172.32.0.1", "192.0.2.10"],
+    "answer": "10.0.0.5"
+  },
+  {
+    "question": "Which file typically controls how the system resolves names (ordering of files, DNS, etc.)?",
+    "options": ["/etc/nsswitch.conf", "/etc/hosts", "/etc/resolv.conf", "/etc/network/interfaces"],
+    "answer": "/etc/nsswitch.conf"
+  },
+  {
+    "question": "Which command is used to flush the DNS cache on many systemd-resolved based Linux systems?",
+    "options": [
+      "systemd-resolve --flush-caches",
+      "resolvectl flush-caches",
+      "service dns flush",
+      "dnsflush"
+    ],
+    "answer": "resolvectl flush-caches"
+  },
+  {
+    "question": "Which command would you use to list firewall rules with iptables (legacy nftables-compatible)?",
+    "options": [
+      "iptables -L -n -v",
+      "firewalld --list",
+      "nft list firewall",
+      "ip fw list"
+    ],
+    "answer": "iptables -L -n -v"
+  },
+  {
+    "question": "Which command is used to list all nftables rules on a system using nftables?",
+    "options": ["nft show ruleset", "nft list all", "iptables -S", "ip nft show"],
+    "answer": "nft show ruleset"
+  },
+  {
+    "question": "In Linux networking, what is the loopback interface usually named?",
+    "options": ["eth0", "lo", "lo0", "loop0"],
+    "answer": "lo"
+  },
+  {
+    "question": "Which IP address is typically used for loopback on IPv4?",
+    "options": ["0.0.0.0", "127.0.0.1", "192.168.0.1", "255.255.255.255"],
+    "answer": "127.0.0.1"
+  },
+  {
+    "question": "Which command can you use to quickly check TCP connectivity to a specific host and port from the CLI (when installed)?",
+    "options": ["ping host port", "nc host port", "ip connect host port", "ss host port"],
+    "answer": "nc host port"
+  },
+  {
+    "question": "Which command shows brief interface information including IPv4/IPv6 addresses and state using iproute2?",
+    "options": ["ip a", "ip -br a", "ip link brief", "ifconfig -b"],
+    "answer": "ip -br a"
+  }
+]
+

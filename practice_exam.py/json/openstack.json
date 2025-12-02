@@ -1,0 +1,148 @@
+[
+  {
+    "question": "In Neutron, which resource represents the virtual NIC attached to an instance?",
+    "options": ["Network", "Subnet", "Port", "Router"],
+    "answer": "Port"
+  },
+  {
+    "question": "Which Neutron object directly connects a VM to a subnet and can have a security group applied?",
+    "options": ["Router", "Port", "Network", "Floating IP"],
+    "answer": "Port"
+  },
+  {
+    "question": "Which type of Neutron network is typically used to provide external connectivity and floating IPs?",
+    "options": ["Provider network", "Tenant isolated network", "GRE overlay network", "VXLAN overlay network"],
+    "answer": "Provider network"
+  },
+  {
+    "question": "In a typical deployment, which Neutron network type is mapped to a physical VLAN for external/provider traffic?",
+    "options": ["GRE", "VXLAN", "Flat/VLAN provider network", "Local network"],
+    "answer": "Flat/VLAN provider network"
+  },
+  {
+    "question": "Which feature in Nova is specifically designed to recover instances from a failed compute host onto a healthy host?",
+    "options": ["Shelving", "Evacuation", "Cold migration", "Resize"],
+    "answer": "Evacuation"
+  },
+  {
+    "question": "Which Nova operation moves an instance to a different compute host without changing its flavor and while it remains powered on?",
+    "options": ["Live migration", "Evacuation", "Resize", "Rebuild"],
+    "answer": "Live migration"
+  },
+  {
+    "question": "Which command (legacy Nova CLI) is commonly used to evacuate all instances from a failed compute host?",
+    "options": [
+      "nova host-evacuate <host>",
+      "openstack compute evacuate <host>",
+      "openstack server evacuate --host <host>",
+      "nova evacuate-all <host>"
+    ],
+    "answer": "nova host-evacuate <host>"
+  },
+  {
+    "question": "Which command evacuates a single server to a specified host using the OpenStack client?",
+    "options": [
+      "openstack server evacuate --host <host> <server-id>",
+      "openstack compute evacuate --host <host> <server-id>",
+      "openstack server migrate --live <host> <server-id>",
+      "openstack server move --evacuate <host> <server-id>"
+    ],
+    "answer": "openstack server evacuate --host <host> <server-id>"
+  },
+  {
+    "question": "Which flavor feature is used to attach scheduling hints such as CPU pinning policies or host aggregate requirements?",
+    "options": ["Flavor metadata", "Flavor extra specs", "Flavor tags", "Flavor policies"],
+    "answer": "Flavor extra specs"
+  },
+  {
+    "question": "You want instances of a specific flavor to run only on hosts in a \"gold-ssd\" host aggregate. What is the correct place to configure this?",
+    "options": [
+      "Flavor extra specs referencing the aggregate",
+      "Flavor RAM and vCPU fields",
+      "Nova configuration file on the controller",
+      "Neutron network segments"
+    ],
+    "answer": "Flavor extra specs referencing the aggregate"
+  },
+  {
+    "question": "In Keystone v3, which concept represents a logical container for resources and identity that replaces the older 'tenant' terminology?",
+    "options": ["Domain", "Project", "Region", "Service"],
+    "answer": "Project"
+  },
+  {
+    "question": "In Keystone, which concept typically represents a higher-level container that can own multiple projects?",
+    "options": ["Domain", "Region", "Tenant", "Service"],
+    "answer": "Domain"
+  },
+  {
+    "question": "Which OpenStack service provides information about resource providers, inventories, and allocations for scheduling?",
+    "options": ["Placement", "Keystone", "Ceilometer", "Magnum"],
+    "answer": "Placement"
+  },
+  {
+    "question": "A live migration fails with a scheduling error even though the target host has free vCPUs. Which component is most likely out of sync and should be checked?",
+    "options": ["Glance image cache", "Placement resource inventories and allocations", "Neutron DHCP leases", "Cinder backend status"],
+    "answer": "Placement resource inventories and allocations"
+  },
+  {
+    "question": "Which OpenStack component combination is responsible for actually enforcing security group rules on instance traffic?",
+    "options": [
+      "Keystone only",
+      "Neutron agents (and sometimes Nova compute) on the hypervisor",
+      "Glance and Cinder",
+      "Horizon and Heat"
+    ],
+    "answer": "Neutron agents (and sometimes Nova compute) on the hypervisor"
+  },
+  {
+    "question": "Where are security group rules typically enforced in an OVS-based Neutron deployment?",
+    "options": [
+      "Only at the router namespace",
+      "At the physical top-of-rack switches",
+      "At the hypervisor via iptables/OVS flows on the instance's tap/port",
+      "Only on the external provider network"
+    ],
+    "answer": "At the hypervisor via iptables/OVS flows on the instance's tap/port"
+  },
+  {
+    "question": "Which command would you use to view the console output of a failed instance from the OpenStack client?",
+    "options": [
+      "openstack server log show <server-id>",
+      "openstack server event list <server-id>",
+      "openstack server console show <server-id>",
+      "nova debug-log <server-id>"
+    ],
+    "answer": "openstack server log show <server-id>"
+  },
+  {
+    "question": "Which command lists lifecycle events, including migrations and rebuilds, for a given instance?",
+    "options": [
+      "openstack server log show <server-id>",
+      "openstack server event list <server-id>",
+      "openstack server history show <server-id>",
+      "openstack compute event show <server-id>"
+    ],
+    "answer": "openstack server event list <server-id>"
+  },
+  {
+    "question": "On a compute node, which log file is the primary place to look when debugging instance start or migration failures?",
+    "options": [
+      "/var/log/nova/nova-compute.log",
+      "/var/log/nova/nova-api.log",
+      "/var/log/neutron/server.log",
+      "/var/log/keystone/keystone.log"
+    ],
+    "answer": "/var/log/nova/nova-compute.log"
+  },
+  {
+    "question": "Which Neutron command lists all ports attached to a specific server?",
+    "options": [
+      "openstack port list --server <server-id>",
+      "openstack port list --instance <server-id>",
+      "openstack network port list <server-id>",
+      "openstack neutron port list --server <server-id>"
+    ],
+    "answer": "openstack port list --server <server-id>"
+  }
+]
+

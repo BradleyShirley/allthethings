@@ -1,0 +1,238 @@
+[
+  {
+    "question": "What does NUMA stand for in CPU topology?",
+    "options": ["Non-Uniform Memory Access", "Non-Universal Memory Architecture", "Network Unified Memory Access", "Normalized Unified Memory Architecture"],
+    "answer": "Non-Uniform Memory Access"
+  },
+  {
+    "question": "In a NUMA system, which statement is MOST accurate?",
+    "options": [
+      "All CPUs have identical, equal-latency access to all memory",
+      "Memory is divided into nodes associated with specific CPUs",
+      "Each CPU has private memory that other CPUs cannot access",
+      "CPUs cannot access memory on other sockets"
+    ],
+    "answer": "Memory is divided into nodes associated with specific CPUs"
+  },
+  {
+    "question": "What is the main performance goal of NUMA-aware placement?",
+    "options": [
+      "Maximize CPU overcommit",
+      "Minimize cross-node memory access latency",
+      "Increase disk throughput",
+      "Reduce network round-trip time"
+    ],
+    "answer": "Minimize cross-node memory access latency"
+  },
+  {
+    "question": "In OpenStack terminology, what does a 'socket' typically represent in NUMA discussions?",
+    "options": ["A CPU thread", "A NUMA cell or node", "A virtual core", "A PCI device"],
+    "answer": "A NUMA cell or node"
+  },
+  {
+    "question": "In OpenStack docs, what are SMT CPUs commonly referred to as?",
+    "options": ["Sockets", "Cores", "Threads", "Nodes"],
+    "answer": "Threads"
+  },
+  {
+    "question": "Which description best matches Simultaneous Multi-Threading (SMT)?",
+    "options": [
+      "Multiple sockets sharing the same memory bus",
+      "Multiple logical CPUs sharing many internal CPU components",
+      "CPUs connected with separate memory controllers",
+      "CPUs with dedicated memory channels only"
+    ],
+    "answer": "Multiple logical CPUs sharing many internal CPU components"
+  },
+  {
+    "question": "In OpenStack, what does PCPU represent?",
+    "options": [
+      "A pooled CPU shared by many guests",
+      "A dedicated physical CPU resource for a guest",
+      "A virtual CPU resource for overcommit",
+      "An idle CPU reserved for the host only"
+    ],
+    "answer": "A dedicated physical CPU resource for a guest"
+  },
+  {
+    "question": "In OpenStack, what does VCPU represent?",
+    "options": [
+      "A dedicated physical CPU core",
+      "A virtual CPU that can be overcommitted",
+      "A CPU reserved only for real-time workloads",
+      "A CPU used only for emulator threads"
+    ],
+    "answer": "A virtual CPU that can be overcommitted"
+  },
+  {
+    "question": "Which OpenStack feature exposes a virtual NUMA topology to the guest and pins its vCPUs and memory to host NUMA nodes?",
+    "options": [
+      "NUMA-awareness with CPU pinning and huge pages",
+      "Security groups",
+      "Floating IPs",
+      "Auto-healing"
+    ],
+    "answer": "NUMA-awareness with CPU pinning and huge pages"
+  },
+  {
+    "question": "Why is it important to keep vCPUs and RAM of a NUMA-aware instance on the same host NUMA node?",
+    "options": [
+      "To reduce license costs",
+      "To avoid using swap space",
+      "To avoid cross-node memory traffic and latency",
+      "To allow more floating IPs to attach"
+    ],
+    "answer": "To avoid cross-node memory traffic and latency"
+  },
+  {
+    "question": "In a NUMA system, I/O to which type of device mapping is typically faster?",
+    "options": [
+      "A device mapped to any NUMA node",
+      "A device mapped to a remote NUMA node",
+      "A device mapped to the local NUMA node",
+      "A device that does not use DMA"
+    ],
+    "answer": "A device mapped to the local NUMA node"
+  },
+  {
+    "question": "Which type of device is commonly associated with NUMA I/O locality?",
+    "options": ["USB devices", "PCIe devices like NICs or GPUs", "SATA DVD drives", "Bluetooth adapters"],
+    "answer": "PCIe devices like NICs or GPUs"
+  },
+  {
+    "question": "Which Nova scheduler filter must be enabled to support NUMA-aware placement?",
+    "options": [
+      "ComputeFilter",
+      "NUMATopologyFilter",
+      "RamFilter",
+      "RetryFilter"
+    ],
+    "answer": "NUMATopologyFilter"
+  },
+  {
+    "question": "What does the flavor extra spec 'hw:numa_nodes=1' generally request?",
+    "options": [
+      "The instance must use one vCPU only",
+      "The instance must be scheduled on exactly one host in the cloud",
+      "The instance vCPUs and memory should be placed on a single host NUMA node",
+      "The instance must use one physical socket and no threads"
+    ],
+    "answer": "The instance vCPUs and memory should be placed on a single host NUMA node"
+  },
+  {
+    "question": "What is the default behavior for an instance on a NUMA host when NUMA-aware settings are NOT used?",
+    "options": [
+      "It is pinned to a single NUMA node",
+      "It cannot start",
+      "It floats across all NUMA nodes on the host",
+      "It is restricted to using only PCI devices"
+    ],
+    "answer": "It floats across all NUMA nodes on the host"
+  },
+  {
+    "question": "Which flavor extra spec is used to select a CPU pinning policy for an instance?",
+    "options": [
+      "hw:cpu_thread_policy",
+      "hw:cpu_sockets",
+      "hw:cpu_policy",
+      "hw:numa_nodes"
+    ],
+    "answer": "hw:cpu_policy"
+  },
+  {
+    "question": "Which value for 'hw:cpu_policy' requests that ALL instance vCPUs use pinned dedicated CPUs?",
+    "options": ["shared", "mixed", "dedicated", "isolated"],
+    "answer": "dedicated"
+  },
+  {
+    "question": "Which 'hw:cpu_policy' value allows a mix of pinned and unpinned vCPUs for the same instance?",
+    "options": ["shared", "mixed", "dedicated", "realtime"],
+    "answer": "mixed"
+  },
+  {
+    "question": "In a quad-socket, 8-core-per-socket system with Hyper-Threading (2 threads per core), how many logical CPUs are there?",
+    "options": ["16", "32", "64", "8"],
+    "answer": "64"
+  },
+  {
+    "question": "Which CPU thread policy explicitly requests hosts WITH SMT/Hyper-Threading when using dedicated CPUs?",
+    "options": ["hw:cpu_thread_policy=isolate", "hw:cpu_thread_policy=require", "hw:cpu_thread_policy=prefer", "hw:cpu_thread_policy=shared"],
+    "answer": "hw:cpu_thread_policy=require"
+  },
+  {
+    "question": "Which CPU thread policy tries to avoid SMT by requesting hosts WITHOUT Hyper-Threading?",
+    "options": ["hw:cpu_thread_policy=require", "hw:cpu_thread_policy=isolate", "hw:cpu_thread_policy=prefer", "hw:cpu_thread_policy=mixed"],
+    "answer": "hw:cpu_thread_policy=isolate"
+  },
+  {
+    "question": "Which CPU thread policy will use thread siblings if available but can fall back to non-SMT hosts?",
+    "options": ["hw:cpu_thread_policy=require", "hw:cpu_thread_policy=isolate", "hw:cpu_thread_policy=prefer", "hw:cpu_thread_policy=shared"],
+    "answer": "hw:cpu_thread_policy=prefer"
+  },
+  {
+    "question": "If a flavor and an image define conflicting CPU policies (e.g., one shared and one dedicated), what is the expected behavior?",
+    "options": [
+      "The image policy always wins",
+      "The flavor policy always wins",
+      "Nova raises an exception and refuses the request",
+      "Nova silently picks shared"
+    ],
+    "answer": "Nova raises an exception and refuses the request"
+  },
+  {
+    "question": "Which policy type takes precedence in OpenStack when both a flavor and an image define CPU policy?",
+    "options": [
+      "Image metadata policy",
+      "Flavor extra spec policy",
+      "The most restrictive policy",
+      "The policy defined last"
+    ],
+    "answer": "Flavor extra spec policy"
+  },
+  {
+    "question": "In simple terms, what does the 'pack' strategy for NUMA cell allocation try to do?",
+    "options": [
+      "Spread load evenly across all NUMA nodes",
+      "Fill up one NUMA node as much as possible before using others",
+      "Always pick the node with the most free memory first",
+      "Always avoid nodes that have PCI devices"
+    ],
+    "answer": "Fill up one NUMA node as much as possible before using others"
+  },
+  {
+    "question": "In simple terms, what does the 'spread' strategy for NUMA cell allocation try to do?",
+    "options": [
+      "Pack as many instances as possible on one NUMA node",
+      "Prefer nodes with the least free resources",
+      "Balance load by using NUMA nodes with more free resources first",
+      "Disable NUMA scheduling"
+    ],
+    "answer": "Balance load by using NUMA nodes with more free resources first"
+  },
+  {
+    "question": "Which resource types does Nova typically track separately for dedicated vs shared CPUs?",
+    "options": ["VCPU and RAM", "PCPU and VCPU", "Core and Thread", "NUMA and SMT"],
+    "answer": "PCPU and VCPU"
+  },
+  {
+    "question": "If hw:cpu_sockets, hw:cpu_cores, and hw:cpu_threads are all set in a flavor, what must be true?",
+    "options": [
+      "Their sum must equal the number of vCPUs",
+      "Their product must equal the number of vCPUs",
+      "They must all be equal to the vCPU count",
+      "They must all be powers of two"
+    ],
+    "answer": "Their product must equal the number of vCPUs"
+  },
+  {
+    "question": "At a high level, why might an operator configure a custom CPU topology (sockets/cores/threads) for an instance?",
+    "options": [
+      "To reduce disk I/O usage",
+      "To match licensing or OS expectations about CPU sockets/cores",
+      "To disable NUMA entirely",
+      "To avoid using Hyper-Threading"
+    ],
+    "answer": "To match licensing or OS expectations about CPU sockets/cores"
+  }
+]
+

@@ -1,0 +1,183 @@
+[
+  {
+    "question": "Which command lists all RabbitMQ nodes and their status?",
+    "options": [
+      "rabbitmqctl list_nodes",
+      "rabbitmqctl status",
+      "rabbitmq-diagnostics cluster_status",
+      "rabbitmqctl list_cluster"
+    ],
+    "answer": "rabbitmqctl list_nodes"
+  },
+  {
+    "question": "Which command displays the full status of the RabbitMQ server, including running applications and config?",
+    "options": [
+      "rabbitmqctl info",
+      "rabbitmqctl show",
+      "rabbitmqctl status",
+      "rabbitmq-diagnostics info"
+    ],
+    "answer": "rabbitmqctl status"
+  },
+  {
+    "question": "Which command lists all queues in RabbitMQ along with their message counts?",
+    "options": [
+      "rabbitmqctl list_queues",
+      "rabbitmqctl show_queues",
+      "rabbitmq-diagnostics queues",
+      "rabbitmqadmin queues list"
+    ],
+    "answer": "rabbitmqctl list_queues"
+  },
+  {
+    "question": "Which command lists all exchanges in the RabbitMQ cluster?",
+    "options": [
+      "rabbitmqctl exchanges list",
+      "rabbitmqctl list_exchanges",
+      "rabbitmq-diagnostics exchanges",
+      "rabbitmqadmin list exchanges"
+    ],
+    "answer": "rabbitmqctl list_exchanges"
+  },
+  {
+    "question": "Which RabbitMQ command shows users and their associated tags?",
+    "options": [
+      "rabbitmqctl list_users",
+      "rabbitmqctl show_users",
+      "rabbitmqctl users",
+      "rabbitmqadmin list users"
+    ],
+    "answer": "rabbitmqctl list_users"
+  },
+  {
+    "question": "Which command creates a new RabbitMQ user?",
+    "options": [
+      "rabbitmqctl add_user <username> <password>",
+      "rabbitmqctl create_user <username> <password>",
+      "rabbitmqadmin user add <username> <password>",
+      "rabbitmq-diagnostics add_user <username> <password>"
+    ],
+    "answer": "rabbitmqctl add_user <username> <password>"
+  },
+  {
+    "question": "Which command sets permissions for a user on a specific vhost?",
+    "options": [
+      "rabbitmqctl set_permissions <vhost> <user> <configure> <write> <read>",
+      "rabbitmqctl set_user_permissions <user> <permissions>",
+      "rabbitmqctl set_permissions -u <user> <vhost> <perm>",
+      "rabbitmqadmin permissions set <user> <vhost>"
+    ],
+    "answer": "rabbitmqctl set_permissions <vhost> <user> <configure> <write> <read>"
+  },
+  {
+    "question": "Which command is used to create a new virtual host?",
+    "options": [
+      "rabbitmqctl add_vhost <vhost>",
+      "rabbitmqctl create_vhost <vhost>",
+      "rabbitmqadmin vhost add <vhost>",
+      "rabbitmq-diagnostics add_vhost <vhost>"
+    ],
+    "answer": "rabbitmqctl add_vhost <vhost>"
+  },
+  {
+    "question": "Which command shows all bindings between queues and exchanges?",
+    "options": [
+      "rabbitmqctl list_bindings",
+      "rabbitmqctl show_bindings",
+      "rabbitmqadmin list bindings",
+      "rabbitmqctl bindings list"
+    ],
+    "answer": "rabbitmqctl list_bindings"
+  },
+  {
+    "question": "Which command stops the local RabbitMQ node safely?",
+    "options": [
+      "rabbitmqctl stop",
+      "rabbitmqctl shutdown",
+      "rabbitmq-stop",
+      "systemctl stop rabbitmq"
+    ],
+    "answer": "rabbitmqctl stop"
+  },
+  {
+    "question": "Which command removes a user from RabbitMQ?",
+    "options": [
+      "rabbitmqctl delete_user <username>",
+      "rabbitmqctl drop_user <username>",
+      "rabbitmqadmin user delete <username>",
+      "rabbitmq-diagnostics remove_user <username>"
+    ],
+    "answer": "rabbitmqctl delete_user <username>"
+  },
+  {
+    "question": "Which command lists queues for a specific vhost?",
+    "options": [
+      "rabbitmqctl list_queues -p <vhost>",
+      "rabbitmqctl queues list <vhost>",
+      "rabbitmqctl show_queues <vhost>",
+      "rabbitmqadmin list queues <vhost>"
+    ],
+    "answer": "rabbitmqctl list_queues -p <vhost>"
+  },
+  {
+    "question": "Which command checks cluster status including partitions and running nodes?",
+    "options": [
+      "rabbitmq-diagnostics cluster_status",
+      "rabbitmqctl list_nodes --cluster",
+      "rabbitmqctl show_cluster",
+      "rabbitmqadmin cluster status"
+    ],
+    "answer": "rabbitmq-diagnostics cluster_status"
+  },
+  {
+    "question": "Which type of exchange routes messages based on exact matching routing keys?",
+    "options": ["Topic exchange", "Direct exchange", "Fanout exchange", "Headers exchange"],
+    "answer": "Direct exchange"
+  },
+  {
+    "question": "Which exchange type broadcasts messages to all bound queues regardless of routing keys?",
+    "options": ["Direct exchange", "Topic exchange", "Fanout exchange", "Headers exchange"],
+    "answer": "Fanout exchange"
+  },
+  {
+    "question": "Which exchange type uses wildcard patterns (e.g., 'app.*' or '*.info') to route messages?",
+    "options": ["Topic exchange", "Fanout exchange", "Headers exchange", "Direct exchange"],
+    "answer": "Topic exchange"
+  },
+  {
+    "question": "Which command clears all messages from a specific queue?",
+    "options": [
+      "rabbitmqctl purge_queue <queue>",
+      "rabbitmqctl clear <queue>",
+      "rabbitmqadmin queue purge <queue>",
+      "rabbitmqctl reset_queue <queue>"
+    ],
+    "answer": "rabbitmqctl purge_queue <queue>"
+  },
+  {
+    "question": "Which command displays environment configuration settings for RabbitMQ?",
+    "options": [
+      "rabbitmq-diagnostics environment",
+      "rabbitmqctl config",
+      "rabbitmqctl show_env",
+      "rabbitmqctl list_env"
+    ],
+    "answer": "rabbitmq-diagnostics environment"
+  },
+  {
+    "question": "Which command enables the RabbitMQ Management Plugin UI?",
+    "options": [
+      "rabbitmq-plugins enable rabbitmq_management",
+      "rabbitmqctl enable management",
+      "rabbitmq-diagnostics enable_ui",
+      "rabbitmqctl plugins add management"
+    ],
+    "answer": "rabbitmq-plugins enable rabbitmq_management"
+  },
+  {
+    "question": "RabbitMQ’s default TCP port for AMQP communication is:",
+    "options": ["15672", "4369", "5672", "25672"],
+    "answer": "5672"
+  }
+]
+

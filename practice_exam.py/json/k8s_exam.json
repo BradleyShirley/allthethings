@@ -1,0 +1,159 @@
+
+[
+  {
+    "question": "Which kubectl command is typically used for declarative configuration of Kubernetes resources from YAML files?",
+    "options": ["kubectl create -f", "kubectl run", "kubectl apply -f", "kubectl edit"],
+    "answer": "kubectl apply -f"
+  },
+  {
+    "question": "Which object is best suited for managing stateless application replicas with rolling updates?",
+    "options": ["ReplicaSet", "Deployment", "StatefulSet", "DaemonSet"],
+    "answer": "Deployment"
+  },
+  {
+    "question": "Which object is designed for applications that require stable network identities and stable persistent storage, such as databases?",
+    "options": ["Deployment", "StatefulSet", "Job", "DaemonSet"],
+    "answer": "StatefulSet"
+  },
+  {
+    "question": "Which Kubernetes resource ensures that a copy of a pod is running on each (or some) nodes in the cluster, typically for agents like log collectors?",
+    "options": ["Deployment", "Job", "StatefulSet", "DaemonSet"],
+    "answer": "DaemonSet"
+  },
+  {
+    "question": "Which Service type exposes an application on a cluster-internal IP only, not reachable from outside the cluster?",
+    "options": ["ClusterIP", "NodePort", "LoadBalancer", "ExternalName"],
+    "answer": "ClusterIP"
+  },
+  {
+    "question": "Which Service type allocates a port in the 30000–32767 range on each node to expose an application externally?",
+    "options": ["ClusterIP", "NodePort", "LoadBalancer", "Headless"],
+    "answer": "NodePort"
+  },
+  {
+    "question": "Which resource is used for HTTP/HTTPS routing from outside the cluster into Services, often using hostnames and paths?",
+    "options": ["Ingress", "NetworkPolicy", "EndpointSlice", "ConfigMap"],
+    "answer": "Ingress"
+  },
+  {
+    "question": "Which Kubernetes object is used to store non-sensitive configuration values in key-value format for consumption by pods?",
+    "options": ["Secret", "ConfigMap", "PersistentVolumeClaim", "ResourceQuota"],
+    "answer": "ConfigMap"
+  },
+  {
+    "question": "Which Kubernetes object is intended for storing sensitive data such as passwords, tokens, or keys?",
+    "options": ["ConfigMap", "Secret", "PersistentVolume", "LimitRange"],
+    "answer": "Secret"
+  },
+  {
+    "question": "Which probe type is used to determine whether a container is ready to receive traffic?",
+    "options": ["Liveness probe", "Readiness probe", "Startup probe", "Health probe"],
+    "answer": "Readiness probe"
+  },
+  {
+    "question": "Which probe type is used to decide when to restart a container that is unhealthy or stuck?",
+    "options": ["Readiness probe", "Liveness probe", "Startup probe", "Metrics probe"],
+    "answer": "Liveness probe"
+  },
+  {
+    "question": "What does a HorizontalPodAutoscaler (HPA) automatically adjust based on observed metrics such as CPU utilization?",
+    "options": ["Cluster node count", "Pod replica count", "Container image version", "Namespace quotas"],
+    "answer": "Pod replica count"
+  },
+  {
+    "question": "What is the primary purpose of Kubernetes namespaces?",
+    "options": [
+      "To control pod restart behavior",
+      "To isolate resources and names within a shared cluster",
+      "To define physical node boundaries",
+      "To manage container images"
+    ],
+    "answer": "To isolate resources and names within a shared cluster"
+  },
+  {
+    "question": "Which kubectl command shows all pods across all namespaces?",
+    "options": [
+      "kubectl get pods",
+      "kubectl get pods -A",
+      "kubectl describe pods --all",
+      "kubectl list pods --all"
+    ],
+    "answer": "kubectl get pods -A"
+  },
+  {
+    "question": "Which kubectl command executes an interactive bash shell inside a running pod named 'web-abc123'?",
+    "options": [
+      "kubectl exec web-abc123 bash",
+      "kubectl exec -it web-abc123 -- /bin/bash",
+      "kubectl attach web-abc123 --bash",
+      "kubectl connect web-abc123 bash"
+    ],
+    "answer": "kubectl exec -it web-abc123 -- /bin/bash"
+  },
+  {
+    "question": "Which kubectl command shows detailed information and recent events for a specific pod?",
+    "options": [
+      "kubectl info pod <name>",
+      "kubectl describe pod <name>",
+      "kubectl details pod <name>",
+      "kubectl events pod <name>"
+    ],
+    "answer": "kubectl describe pod <name>"
+  },
+  {
+    "question": "Which field in a pod spec defines the minimum and maximum CPU/memory that a container can use?",
+    "options": ["resources", "limits", "requests", "resources.requests and resources.limits"],
+    "answer": "resources.requests and resources.limits"
+  },
+  {
+    "question": "Which Kubernetes feature prevents pods from being scheduled on certain nodes unless they explicitly tolerate the condition?",
+    "options": ["Node labels", "Taints and tolerations", "Node selectors", "Affinity rules"],
+    "answer": "Taints and tolerations"
+  },
+  {
+    "question": "Which scheduling feature is used when you want pods to prefer or require running on nodes with specific labels (for example, SSD storage)?",
+    "options": ["Affinity/anti-affinity", "Taints", "ConfigMaps", "Init containers"],
+    "answer": "Affinity/anti-affinity"
+  },
+  {
+    "question": "Which command changes the active kubectl context to 'prod-cluster'?",
+    "options": [
+      "kubectl set-context prod-cluster",
+      "kubectl config use-context prod-cluster",
+      "kubectl use-context prod-cluster",
+      "kubectl switch prod-cluster"
+    ],
+    "answer": "kubectl config use-context prod-cluster"
+  },
+  {
+    "question": "Which Kubernetes resource defines RBAC permissions for a user or ServiceAccount within a single namespace?",
+    "options": ["ClusterRole", "Role", "ClusterRoleBinding", "NamespaceBinding"],
+    "answer": "Role"
+  },
+  {
+    "question": "Which Kubernetes resource binds a Role to a specific user, group, or ServiceAccount within a namespace?",
+    "options": ["ClusterRoleBinding", "RoleBinding", "NamespaceRole", "SubjectBinding"],
+    "answer": "RoleBinding"
+  },
+  {
+    "question": "Which volume type allows a pod to request storage dynamically from a StorageClass-backed provisioner?",
+    "options": ["HostPath", "EmptyDir", "PersistentVolumeClaim", "ConfigMap"],
+    "answer": "PersistentVolumeClaim"
+  },
+  {
+    "question": "Which of the following best describes a headless Service in Kubernetes?",
+    "options": [
+      "A Service with no cluster IP that returns pod IPs directly via DNS",
+      "A Service that exposes multiple ports",
+      "A Service that only other Services can access",
+      "A Service that does not perform any load balancing"
+    ],
+    "answer": "A Service with no cluster IP that returns pod IPs directly via DNS"
+  },
+  {
+    "question": "Which object would you primarily use to perform a one-time batch job that runs to completion and then stops?",
+    "options": ["Deployment", "StatefulSet", "Job", "DaemonSet"],
+    "answer": "Job"
+  }
+]
+

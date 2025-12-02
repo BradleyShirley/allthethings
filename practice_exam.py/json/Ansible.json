@@ -1,0 +1,158 @@
+[
+  {
+    "question": "Which command is used to run an Ansible playbook file?",
+    "options": ["ansible", "ansible-playbook", "ansible-run", "ansible-exec"],
+    "answer": "ansible-playbook"
+  },
+  {
+    "question": "Which file is commonly used for the default static inventory?",
+    "options": ["hosts.ini", "inventory", "/etc/ansible/hosts", "ansible.cfg"],
+    "answer": "/etc/ansible/hosts"
+  },
+  {
+    "question": "Which Ansible command runs a single task (ad-hoc) against hosts?",
+    "options": [
+      "ansible",
+      "ansible-task",
+      "ansible-playbook --single",
+      "ansible-run"
+    ],
+    "answer": "ansible"
+  },
+  {
+    "question": "In an ad-hoc command, which option specifies the module to use?",
+    "options": ["-a", "-i", "-m", "-u"],
+    "answer": "-m"
+  },
+  {
+    "question": "In an ad-hoc command, which option specifies the arguments for the module?",
+    "options": ["-m", "-i", "-a", "-e"],
+    "answer": "-a"
+  },
+  {
+    "question": "Which of the following best describes an Ansible playbook?",
+    "options": [
+      "A single command executed on a host",
+      "A YAML file describing desired state and tasks",
+      "A compiled binary that runs modules",
+      "A JSON inventory file"
+    ],
+    "answer": "A YAML file describing desired state and tasks"
+  },
+  {
+    "question": "Which Ansible concept groups tasks that can be reused and shared, including defaults, handlers, and templates?",
+    "options": ["Handlers", "Roles", "Collections", "Callbacks"],
+    "answer": "Roles"
+  },
+  {
+    "question": "Which directory structure is typically used to store group-specific variables?",
+    "options": ["group_vars/", "host_vars/", "vars/", "defaults/"],
+    "answer": "group_vars/"
+  },
+  {
+    "question": "Which directory structure is typically used to store host-specific variables?",
+    "options": ["group_vars/", "host_vars/", "vars/", "defaults/"],
+    "answer": "host_vars/"
+  },
+  {
+    "question": "Which directive in a task is used to run a task with elevated privileges (for example, via sudo)?",
+    "options": ["sudo: yes", "become: yes", "elevate: true", "root: true"],
+    "answer": "become: yes"
+  },
+  {
+    "question": "Which built-in Ansible module is commonly used to copy files from the control node to managed hosts?",
+    "options": ["file", "copy", "template", "fetch"],
+    "answer": "copy"
+  },
+  {
+    "question": "Which Ansible module is typically used to manage packages on Debian/Ubuntu systems?",
+    "options": ["yum", "dnf", "apt", "package_manager"],
+    "answer": "apt"
+  },
+  {
+    "question": "Which Ansible module is typically used to manage services (start/stop/restart) on Linux?",
+    "options": ["command", "shell", "service", "system"],
+    "answer": "service"
+  },
+  {
+    "question": "Which special section in a playbook is used to restart services only when notified by tasks?",
+    "options": ["tasks", "handlers", "vars", "defaults"],
+    "answer": "handlers"
+  },
+  {
+    "question": "Which keyword is used in a task to trigger a handler by name?",
+    "options": ["call:", "notify:", "signal:", "handler:"],
+    "answer": "notify:"
+  },
+  {
+    "question": "Which keyword is used to conditionally run a task based on a variable or fact?",
+    "options": ["if:", "when:", "only_if:", "condition:"],
+    "answer": "when:"
+  },
+  {
+    "question": "Which keyword allows you to tag a task so that you can selectively run tasks by tag?",
+    "options": ["labels:", "tags:", "select:", "groups:"],
+    "answer": "tags:"
+  },
+  {
+    "question": "Which Ansible feature lets you see what changes WOULD be made without actually applying them?",
+    "options": ["--verbose", "--syntax-check", "--check", "--diff-only"],
+    "answer": "--check"
+  },
+  {
+    "question": "Which Ansible feature is primarily responsible for ensuring that multiple runs of a playbook result in the same state without unnecessary changes?",
+    "options": ["Idempotence", "Inventory", "Handlers", "Facts"],
+    "answer": "Idempotence"
+  },
+  {
+    "question": "Which command encrypts a file using Ansible Vault?",
+    "options": [
+      "ansible-vault create file.yml",
+      "ansible-vault encrypt file.yml",
+      "ansible-vault secure file.yml",
+      "ansible-encrypt file.yml"
+    ],
+    "answer": "ansible-vault encrypt file.yml"
+  },
+  {
+    "question": "Which command edits an already vaulted file?",
+    "options": [
+      "ansible-vault edit file.yml",
+      "ansible-vault modify file.yml",
+      "ansible-vault open file.yml",
+      "ansible-vault change file.yml"
+    ],
+    "answer": "ansible-vault edit file.yml"
+  },
+  {
+    "question": "Which command tests a playbook for YAML and basic structural validity without running it?",
+    "options": [
+      "ansible-playbook --dry-run",
+      "ansible-playbook --syntax-check",
+      "ansible-lint",
+      "ansible --check"
+    ],
+    "answer": "ansible-playbook --syntax-check"
+  },
+  {
+    "question": "Where is the main Ansible configuration file typically located by default?",
+    "options": [
+      "./ansible.cfg in the current directory",
+      "/etc/ansible/ansible.cfg",
+      "~/.ansible.cfg in the home directory",
+      "Any of the above, depending on which exists and has highest precedence"
+    ],
+    "answer": "Any of the above, depending on which exists and has highest precedence"
+  },
+  {
+    "question": "Which Ansible module is commonly used with Jinja2 templates to generate configuration files on managed hosts?",
+    "options": ["copy", "template", "lineinfile", "assemble"],
+    "answer": "template"
+  },
+  {
+    "question": "Which built-in magic variable contains facts collected about the remote host?",
+    "options": ["hostvars", "ansible_facts", "inventory_hostname", "group_names"],
+    "answer": "ansible_facts"
+  }
+]
+
